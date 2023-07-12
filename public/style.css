@@ -88,7 +88,7 @@ nav {
 
 .page2text-1 {
     margin: 40px 0 20px 20px  ;
-    color: #FEFDFB;
+    color: var(--forground-color);
     font-family: League Gothic;
     font-size: 58px;
     font-style: normal;
