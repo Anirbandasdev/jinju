@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
+    padding: 20px 60px;
     box-shadow: 0 0 2rem 0 rgba(243, 200, 130, 0.1);
 }
 
@@ -144,12 +144,12 @@ nav {
 }
 
 .page1left {
-    line-height: 280px;
+    line-height: 275px;
 }
 
 .page1left h2 {
     font-family: 'League Gothic', sans-serif;
-    font-size: 370px;
+    font-size: 360px;
     text-transform: uppercase;
     color: var(--forground-color);
     font-weight: 400;
