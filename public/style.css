@@ -60,6 +60,71 @@ nav {
     background-color: var(--bgcolor);
 }
 
+
+/*!----------------all icon----------------- */
+
+.all-icon {
+    position: fixed;
+    right: 1%;
+    display: inline-flex;
+    flex-direction: column;
+    /* top: 10%; */
+}
+
+
+.all-icon .icon {
+    font-size: 30px;
+    line-height: 50Px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.all-icon a {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: var(--forground-color);
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+    /* box-shadow: 0 5px 5px rgba(255, 255, 255, 0.233); */
+}
+
+.all-icon a::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    right: -90px;
+    /* left: 0; */
+    top: 0;
+    /* background: linear-gradient(-45deg,#ed1c94, #ffec17); */
+    transition: 0.5s;
+}
+.all-icon .fb::after {
+    background: linear-gradient(-45deg,#17A9FD, #0165E1) !important;
+}
+
+.all-icon .ig::after {
+    background: linear-gradient(-45deg, #405DE6, #F56040)!important;
+}
+
+.all-icon .yt::after {
+    background: red !important;
+}
+
+
+.all-icon a:hover::after{
+    right: 0;
+}
+
+.all-icon a:hover .icon{
+    color: #f0efed !important;
+}
+
 /*!----------------page 1----------------- */
 
 #page1 {
@@ -87,7 +152,7 @@ nav {
 
 
 .page2text-1 {
-    margin: 40px 0 20px 20px  ;
+    margin: 40px 0 20px 20px;
     color: var(--forground-color);
     font-family: League Gothic;
     font-size: 58px;
