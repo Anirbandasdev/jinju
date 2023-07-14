@@ -7,7 +7,7 @@ window.addEventListener( "load", function() {
 
     this.setTimeout(() => {
         preLoader.style.display = "none";
-    }, 1000)
+    }, 2000)
 });
 
 
