@@ -1,3 +1,15 @@
+// preLoader
+
+const preLoader = document. querySelector( ".preloader" );
+
+window.addEventListener( "load", function() {
+    preLoader.style.display = "none";
+});
+
+
+
+
+
 // navbar sticky
 
 const section_hero = document. querySelector( "#page1");
