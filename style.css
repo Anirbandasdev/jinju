@@ -364,3 +364,17 @@ nav {
     line-height: 95px;
     text-transform: uppercase;
 }
+
+/*!----------------page 3----------------- */
+
+@media (min-width: 3840px) {
+    .page1left {
+        line-height: 2320px;
+    }
+    .page1left h2 {
+        font-size: 6250px;
+    }
+}
+
+
+
