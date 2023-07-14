@@ -7,9 +7,6 @@ window.addEventListener( "load", function() {
 });
 
 
-
-
-
 // navbar sticky
 
 const section_hero = document. querySelector( "#page1");
