@@ -236,17 +236,20 @@ nav {
     animation-name: page1text-1;
     animation-duration: 3s;
     animation-timing-function: ease-out;
+    animation-delay: 1s;
 }
 
 .page1left .page1text-2 {
     animation-name: page1text-2;
     animation-duration: 3s;
     animation-timing-function: ease-out;
+    animation-delay: 1s;
 }
 
 .page1left .page1text-3 {
     animation-name: page1text-3;
     animation-duration: 4s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
 }
 
