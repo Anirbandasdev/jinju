@@ -8,20 +8,60 @@
     list-style: none;
 }
 
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding: 150px;
+}
+
 :root {
     --bgcolor: #1F1F1F;
     --forground-color: #f0efed;
     --secondary-color: #f3c782;
 }
 
-/*!----------------navber----------------- */
+/*!----------------pageline css----------------- */
 
-.sticky {
+.pageLineText {
+    margin: 40px 0 20px 20px;
+    color: var(--forground-color);
+    font-family: League Gothic;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.page-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--forground-color);
+}
+
+/**----------------sticky navber----------------- */
+
+.sticky{
     position: fixed;
     top: 0;
+    z-index: 11;
     width: 100%;
+    height: 80px;
     background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(249, 255, 198, 0.2);
 }
+
+.sticky .nav-right>ul>li>a:hover{
+    color: #1F1F1F;
+}
+
+
+.stickyhero{
+    margin-top: 90px;
+}
+
+
+/*!----------------navber----------------- */
+
 
 
 nav {
@@ -29,11 +69,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
     padding: 20px 60px;
     box-shadow: 0 0 2rem 0 rgba(243, 200, 130, 0.1);
 }
 
-.nav-left a{
+.nav-left a {
     z-index: 12;
 }
 
@@ -70,9 +111,10 @@ nav {
 .all-icon {
     position: fixed;
     top: 10%;
-    right: 1%;
+    right: 0.1%;
     display: inline-flex;
     flex-direction: column;
+    z-index: 10;
     /* top: 10%; */
 }
 
@@ -108,12 +150,13 @@ nav {
     /* background: linear-gradient(-45deg,#ed1c94, #ffec17); */
     transition: 0.5s;
 }
+
 .all-icon .fb::after {
-    background: linear-gradient(-45deg,#17A9FD, #0165E1) !important;
+    background: linear-gradient(-45deg, #17A9FD, #0165E1) !important;
 }
 
 .all-icon .ig::after {
-    background: linear-gradient(-45deg, #405DE6, #F56040)!important;
+    background: linear-gradient(-45deg, #405DE6, #F56040) !important;
 }
 
 .all-icon .yt::after {
@@ -125,26 +168,28 @@ nav {
 }
 
 
-.all-icon a:hover::after{
+.all-icon a:hover::after {
     right: 0;
     /* height: 60px;
     width: 60px; */
 }
 
-.all-icon a:hover .icon{
-    color: #f0efed !important;
+.all-icon a:hover .icon {
+    color: var(--forground-color) !important;
 }
 
 /*!----------------page 1----------------- */
 
 #page1 {
-    display: flex;
+    /* display: flex; */
     cursor: default;
+    background-image: url(images/background.png);
+    background-size: 100%;
     /* user-select: none; */
 }
 
 .page1left {
-    line-height: 275px;
+    line-height: 280px;
 }
 
 .page1left h2 {
@@ -162,21 +207,81 @@ nav {
 
 /*!----------------page 2----------------- */
 
+#page2 {
+    display: flex;
+    /* padding-bottom: 30px; */
+}
 
-.page2text-1 {
-    margin: 40px 0 20px 20px;
+.page2left {
+    line-height: 155px;
+    /* 87.302% */
+}
+
+.page2left h2 {
     color: var(--forground-color);
     font-family: League Gothic;
-    font-size: 58px;
+    text-transform: uppercase;
+    font-size: 189px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+}
+
+.page2right {
+    margin: 160px 0px 0px 310px;
+    width: 605px;
+    height: 601px;
+    /* flex-shrink: 0; */
+}
+
+.page2right p {
+    color: var(--forground-color);
+    text-align: right;
+    font-family: Heebo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*!----------------page 3----------------- */
+
+
+#page3 {
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.page3left {
+    line-height: 230px;
+    margin-top: 320px;
+}
+
+.page3left h2 {
+    color: #FEFDFB;
+    font-family: League Gothic;
+    font-size: 280px;
+    font-style: normal;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-.page-line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--forground-color);
 
+.page3right {
+    width: 1396px;
+    height: 854px;
+    position: absolute;
+    top: 20px;
+    right: 0.5%;
+}
+
+.page3right p {
+    color: var(--secondary-color);
+    text-align: right;
+    font-family: League Gothic;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 95px;
+    text-transform: uppercase;
 }
