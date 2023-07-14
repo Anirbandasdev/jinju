@@ -22,7 +22,7 @@ body {
 
 /*!----------------preloader css----------------- */
 
-.preloader{
+.preloader {
     background: #000 url(images/loader.gif) no-repeat center center;
     background-size: 15%;
     width: 100%;
@@ -277,6 +277,7 @@ nav {
     0% {
         transform: translateX(-1000px);
     }
+
     50% {
         transform: translateX(0px);
     }
@@ -370,14 +371,18 @@ nav {
 
 /*!----------------page 3----------------- */
 
-@media (min-width: 3840px) {
+@media screen and (min-width: 2560px) {
+    #page1 {
+        height: 1145px;
+        margin-bottom: 45px;
+    }
     .page1left {
-        line-height: 2320px;
+        line-height: 370px;
     }
     .page1left h2 {
-        font-size: 6250px;
+        font-size: 470px;
     }
-}
-
-
-
+    .pageLineText {
+        margin: 30px 0 20px 20px;
+    }
+};
