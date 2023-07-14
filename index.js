@@ -3,7 +3,11 @@
 const preLoader = document. querySelector( ".preloader" );
 
 window.addEventListener( "load", function() {
-    preLoader.style.display = "none";
+    // preLoader.style.display = "none";
+
+    this.setTimeout(() => {
+        preLoader.style.display = "none";
+    }, 1000)
 });
 
 
