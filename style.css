@@ -252,62 +252,6 @@ nav {
     font-weight: 400;
 }
 
-/* .page1right {
-    margin: auto;
-} */
-
-/*!----------------page 1 animation----------------- */
-
-.page1left .page1text-1 {
-    animation-name: page1text-1;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-}
-
-.page1left .page1text-2 {
-    animation-name: page1text-2;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-}
-
-.page1left .page1text-3 {
-    animation-name: page1text-3;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-/* @keyframes page1text-1 {
-    0% {
-        transform: translateX(-1000px);
-    }
-
-    25% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes page1text-2 {
-    0% {
-        transform: translateX(-1000px);
-    }
-
-    50% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes page1text-3 {
-    0% {
-        transform: translateX(-1000px);
-    }
-
-    50% {
-        transform: translateX(0px);
-    }
-} */
 
 
 
