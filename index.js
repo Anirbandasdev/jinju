@@ -7,7 +7,7 @@ window.addEventListener( "load", function() {
 
     this.setTimeout(() => {
         preLoader.style.display = "none";
-    }, 1000)
+    }, 800)
 });
 
 
@@ -33,3 +33,14 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(section_hero);
+
+
+
+gsap. from(".page1left h2", 2, {
+    delay: 1,
+    x: -1400,
+    stagger: {
+        amount: 0.5,
+    },
+    ease: "power4.inOut",
+})
