@@ -6,14 +6,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /* overflow: hidden; */
 }
 
 html,
 body {
     scroll-behavior: smooth;
     scroll-padding: 150px;
-    /* overflow: hidden */
 }
 
 :root {

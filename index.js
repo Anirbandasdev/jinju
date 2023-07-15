@@ -1,13 +1,4 @@
-//! preLoader
-
-// window.addEventListener( "load", function() {
-//     // preLoader.style.display = "none";
-
-//     this.setTimeout(() => {
-//         body.style.overflow = "visible";
-//     }, 800)
-// });
-
+//! Counter Function
 function preLoader() {
     const Counter = document.querySelector( ".counter" );
     let currentValue = 0;
@@ -28,15 +19,11 @@ function preLoader() {
         let delay = Math.floor(Math.random() * 200) + 50;
         setTimeout(updateCounter, delay);
     }
-
     updateCounter();
 }
-
 preLoader();
 
-
 //! navbar sticky
-
 const section_hero = document. querySelector( "#page1");
 const Header = document. querySelector( ".header" );
 
@@ -49,13 +36,11 @@ const observer = new IntersectionObserver((entries) => {
     ent.isIntersecting === false // for hero-section mirgin scrolling treger
     ? section_hero.classList.add("stickyhero")
     : section_hero.classList.remove("stickyhero");
-
 }, {
     root: null,
     rootMargin: "-200px",
     threshold: 0,
 });
-
 observer.observe(section_hero);
 
 //! all GSAP animations
@@ -69,9 +54,14 @@ gs.to (".counter", 0.25, {
 
 gs.to (".bar", 1.5, {
     width: 0,
+
     stagger: {
         amount: 0.5,
     }
+})
+
+gs.to (".preloader" ,{
+    display: "none"
 })
 
 gs.from(".page1left h2", 2, {
