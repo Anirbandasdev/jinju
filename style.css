@@ -167,8 +167,6 @@ nav {
 
 .all-icon {
     position: absolute;
-    /* position: sticky; */
-    /* top: 10%; */
     right: 0.1%;
     display: inline-flex;
     flex-direction: column;
@@ -397,7 +395,22 @@ nav {
     text-transform: uppercase;
 }
 
-/*!----------------page 3----------------- */
+/*!----------------@media screen----------------- */
+@media all and (max-width: 390px) {
+    .all-icon{
+        display: none;
+    }
+    #page1 {
+        height: 809px;
+        /* margin-bottom: 30px; */
+    }
+    .page1left {
+        line-height: 240px;
+    }
+    .page1left h2 {
+        font-size: 145px;
+    }
+}
 
 @media screen and (min-width: 2560px) {
     .bar{
@@ -417,3 +430,4 @@ nav {
         margin: 50px 0 20px 20px;
     }
 };
+
