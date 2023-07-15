@@ -175,6 +175,7 @@ nav {
 
 .all-icon ul{
     display: flex;
+    flex-direction: column;
 
 }
 
@@ -240,7 +241,7 @@ nav {
     /* display: flex; */
     cursor: default;
     background-image: url(images/background.png);
-    background-size: 100%;
+    background-size: cover;
     /* user-select: none; */
 }
 
@@ -351,6 +352,7 @@ nav {
     }
     .all-icon ul{
         display: flex;
+        flex-direction: row
     
     }
     #page1 {
@@ -363,6 +365,24 @@ nav {
     .page1left h2 {
         font-size: 145px;
     }
+    #page2 {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .page2right{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+    .page2img{
+        width: 100vw;
+    }
+    .page2right p {
+        text-align: left;
+    }
+
+
+
 }
 
 @media screen and (min-width: 2560px) {
