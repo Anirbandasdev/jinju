@@ -1,17 +1,41 @@
-// preLoader
+//! preLoader
 
-const preLoader = document. querySelector( ".preloader" );
+// window.addEventListener( "load", function() {
+//     // preLoader.style.display = "none";
 
-window.addEventListener( "load", function() {
-    // preLoader.style.display = "none";
+//     this.setTimeout(() => {
+//         body.style.overflow = "visible";
+//     }, 800)
+// });
 
-    this.setTimeout(() => {
-        preLoader.style.display = "none";
-    }, 800)
-});
+function preLoader() {
+    const Counter = document.querySelector( ".counter" );
+    let currentValue = 0;
+
+    function updateCounter() {
+        if ( currentValue === 100 ) {
+            return
+        }
+
+        currentValue += Math.floor(Math.random() * 10) + 1;
+
+        if ( currentValue > 100 ) {
+            currentValue = 100;
+        }
+
+        Counter.textContent = currentValue;
+
+        let delay = Math.floor(Math.random() * 200) + 50;
+        setTimeout(updateCounter, delay);
+    }
+
+    updateCounter();
+}
+
+preLoader();
 
 
-// navbar sticky
+//! navbar sticky
 
 const section_hero = document. querySelector( "#page1");
 const Header = document. querySelector( ".header" );
@@ -34,10 +58,23 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(section_hero);
 
+//! all GSAP animations
 
+const gs = gsap.timeline()
 
-gsap. from(".page1left h2", 2, {
-    delay: 1,
+gs.to (".counter", 0.25, {
+    delay: 3.5,
+    opacity: 0,
+})
+
+gs.to (".bar", 1.5, {
+    width: 0,
+    stagger: {
+        amount: 0.5,
+    }
+})
+
+gs.from(".page1left h2", 2, {
     x: -1400,
     stagger: {
         amount: 0.5,
