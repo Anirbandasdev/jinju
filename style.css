@@ -166,14 +166,13 @@ nav {
 /*!----------------all icon----------------- */
 
 .all-icon {
-    position: sticky;
     position: absolute;
+    /* position: sticky; */
     /* top: 10%; */
     right: 0.1%;
     display: inline-flex;
     flex-direction: column;
     z-index: 10;
-    /* top: 10%; */
 }
 
 
@@ -195,7 +194,7 @@ nav {
     text-align: center;
     margin: 5px;
     overflow: hidden;
-    /* box-shadow: 0 5px 5px rgba(255, 255, 255, 0.233); */
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.336);
 }
 
 .all-icon a::after {
