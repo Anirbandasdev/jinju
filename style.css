@@ -173,6 +173,10 @@ nav {
     z-index: 10;
 }
 
+.all-icon ul{
+    /* display: flex; */
+
+}
 
 .all-icon .icon {
     font-size: 30px;
@@ -342,7 +346,12 @@ nav {
 /*!----------------@media screen----------------- */
 @media all and (max-width: 390px) {
     .all-icon{
-        display: none;
+        right: 20%;
+        /* left: 50%; */
+    }
+    .all-icon ul{
+        display: flex;
+    
     }
     #page1 {
         height: 809px;
