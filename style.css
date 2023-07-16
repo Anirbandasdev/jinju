@@ -182,7 +182,7 @@ nav {
 
 .all-icon {
     position: absolute;
-    right: 0.1%;
+    right: 0.5%;
     display: inline-flex;
     flex-direction: column;
     z-index: 10;
