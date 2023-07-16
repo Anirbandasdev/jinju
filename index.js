@@ -27,12 +27,19 @@ preLoader();
 
 const nav = document.querySelector( ".header" );
 const mobile_nav = document.querySelector( ".mobile-nav" );
+const mobile_links = document.querySelector(".nav-right")
+
 
 const toggleNevber = () => {
     nav.classList.toggle( "active" );
 };
 
+
 mobile_nav.addEventListener( 'click',() => toggleNevber());
+mobile_links.addEventListener( 'click',() => toggleNevber());
+
+
+
 
 //! navbar sticky
 const section_hero = document. querySelector( "#page1");
