@@ -23,6 +23,17 @@ function preLoader() {
 }
 preLoader();
 
+//! mobile nav
+
+const nav = document.querySelector( ".header" );
+const mobile_nav = document.querySelector( ".mobile-nav" );
+
+const toggleNevber = () => {
+    nav.classList.toggle( "active" );
+};
+
+mobile_nav.addEventListener( 'click',() => toggleNevber());
+
 //! navbar sticky
 const section_hero = document. querySelector( "#page1");
 const Header = document. querySelector( ".header" );
@@ -52,7 +63,7 @@ gs.to (".counter", 0.25, {
     opacity: 0,
 })
 
-gs.to (".bar", 1.5, {
+gs.to (".bar", 1, {
     width: 0,
 
     stagger: {
@@ -60,14 +71,13 @@ gs.to (".bar", 1.5, {
     }
 })
 
-gs.to (".preloader" ,{
-    display: "none"
-})
-
-gs.from(".page1left h2", 2, {
+gs.from(".page1left h2", 1, {
     x: -1400,
     stagger: {
         amount: 0.5,
     },
     ease: "power4.inOut",
+})
+gs.to (".preloader" ,{
+    display: "none"
 })
