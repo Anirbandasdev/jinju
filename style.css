@@ -12,7 +12,6 @@ html,
 body {
     scroll-behavior: smooth;
     scroll-padding: 150px;
-    overflow-x: hidden;
 }
 
 :root {
@@ -42,13 +41,13 @@ body {
     flex-direction: column;
 }
 
-.bar{
+.bar {
     width: 105vw;
     height: 20vh;
     background-color: var(--bgcolor);
 }
 
-.counter{
+.counter {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -158,18 +157,18 @@ nav {
     transition: 0.5s;
 }
 
-.mobile-nav{
+.mobile-nav {
     display: none;
     background: transparent;
     cursor: pointer;
 }
 
-.mobile-nav-icon{
+.mobile-nav-icon {
     font-size: 2rem;
 
 }
 
-.mobile-nav .close{
+.mobile-nav .close {
     display: none;
 }
 
@@ -189,7 +188,7 @@ nav {
     z-index: 10;
 }
 
-.all-icon ul{
+.all-icon ul {
     display: flex;
     flex-direction: column;
 
@@ -362,52 +361,66 @@ nav {
 
 /*!----------------@media screen----------------- */
 @media all and (max-width: 500px) {
-    .all-icon{
+    .all-icon {
         right: 20%;
         /* left: 50%; */
     }
-    .all-icon ul{
+
+    .all-icon ul {
         display: flex;
         flex-direction: row
-    
     }
+
     #page1 {
         height: 809px;
         /* margin-bottom: 30px; */
     }
+
     .page1left {
         line-height: 240px;
     }
+
     .page1left h2 {
         font-size: 145px;
     }
+
     #page2 {
         flex-direction: column;
         margin-bottom: 50px;
     }
-    .page2right{
+
+    .page2right {
         position: static;
         width: 100%;
         height: 100%;
     }
-    .page2img{
+
+    .page2img {
         width: 100vw;
     }
+
     .page2right p {
         text-align: left;
     }
 }
+
 @media all and (max-width: 990px) {
-    nav{
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
         position: relative;
     }
 
-    .mobile-nav{
+    .mobile-nav {
         display: block;
         z-index: 50;
     }
 
-    .nav-right{
+    .nav-right {
         /* display: none; */
         width: 100%;
         height: 100vh;
@@ -424,29 +437,32 @@ nav {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        
+
     }
-    .nav-right ul{
+
+    .nav-right ul {
         flex-direction: column;
         gap: 40px;
     }
 
-    .active .nav-right{
+    .active .nav-right {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
     }
 
-    .active .open{
+    .active .open {
         display: none;
     }
-    .active .close{
+
+    .active .close {
         display: block;
     }
 }
 
 @media all and (max-width: 1565px) {
+
     /* #page2 {
         flex-direction: column;
         margin-bottom: 50px;
@@ -456,27 +472,32 @@ nav {
         width: 100%;
         height: 100%;
     } */
-    .page2img{
+    .page2img {
         width: 80%;
     }
 }
 
 @media screen and (min-width: 2560px) {
-    .bar{
+    .bar {
         height: 20vh;
     }
+
     #page1 {
         height: 1145px;
         margin-bottom: 60px;
     }
+
     .page1left {
         line-height: 370px;
     }
+
     .page1left h2 {
         font-size: 470px;
     }
+
     .pageLineText {
         margin: 50px 0 20px 20px;
     }
-};
+}
 
+;
