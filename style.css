@@ -86,11 +86,10 @@ body {
 .sticky {
     position: fixed;
     top: 0;
-    z-index: 11;
+    z-index: 99;
     width: 100%;
     height: 70px;
     background-color: var(--secondary-color);
-    box-shadow: 0 0 10px rgba(249, 255, 198, 0.2);
     animation-name: nav-animation;
     animation-duration: .5s;
     /* animation-iteration-count: 2; */
