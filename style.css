@@ -20,6 +20,22 @@ body {
     --secondary-color: #f3c782;
 }
 
+::-webkit-scrollbar{
+    width: .5rem;
+    position: absolute
+}
+
+::-webkit-scrollbar-track{
+    background: var(--bgcolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 1rem;
+    border: .1rem solid transparent;
+    background-clip: content-box;
+}
+
 /*!----------------preloader css----------------- */
 
 /* .preloader {
