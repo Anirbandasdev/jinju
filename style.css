@@ -276,12 +276,12 @@ nav {
 }
 
 .page1left {
-    line-height: 280px;
+    line-height: 14.5vw;
 }
 
 .page1left h2 {
     font-family: 'League Gothic', sans-serif;
-    font-size: 360px;
+    font-size: 19vw;
     text-transform: uppercase;
     color: var(--forground-color);
     font-weight: 400;
