@@ -420,7 +420,9 @@ nav {
 }
 
 @media all and (max-width: 990px) {
-
+    ::-webkit-scrollbar{
+        width: 0;
+    }
     html,
     body {
         overflow-x: hidden;
