@@ -57,7 +57,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 observer.observe(section_hero);
 
-//! all GSAP animations
+//! All GSAP Animations
 
 const gs = gsap.timeline()
 
