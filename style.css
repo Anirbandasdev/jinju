@@ -20,12 +20,12 @@ body {
     --secondary-color: #f3c782;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .5rem;
     position: absolute
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: var(--bgcolor);
 }
 
@@ -67,6 +67,7 @@ body {
     padding: .2em .4em;
     font-size: 10vw;
 }
+
 /**------------------------------------------------------------------------------pageline css------------------------------------------------------------- */
 
 .pageLineText {
@@ -115,15 +116,15 @@ body {
     color: #1F1F1F;
 }
 
-.sticky .button{
+.sticky .button {
     background: var(--bgcolor) !important
 }
 
-.sticky .button:hover{
-    color: var(--secondary-color) !important; 
+.sticky .button:hover {
+    color: var(--secondary-color) !important;
 }
 
-.sticky .button:hover i{
+.sticky .button:hover i {
     color: var(--secondary-color) !important;
     transition: 0.5s;
 }
@@ -172,18 +173,21 @@ nav {
     transition: 0.5s;
 }
 
-.button{
+.button {
     padding: 2px 15px;
     background: var(--secondary-color);
     border-radius: 50px
 }
-.button:hover{
+
+.button:hover {
     color: var(--bgcolor) !important;
 }
-.button:hover i{
+
+.button:hover i {
     color: var(--bgcolor) !important;
     transition: 0.5s;
 }
+
 .mobile-nav {
     display: none;
     background: transparent;
@@ -434,9 +438,10 @@ nav {
 }
 
 @media all and (max-width: 990px) {
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 0;
     }
+
     html,
     body {
         overflow-x: hidden;
