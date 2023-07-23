@@ -115,6 +115,18 @@ body {
     color: #1F1F1F;
 }
 
+.sticky .button{
+    background: var(--bgcolor) !important
+}
+
+.sticky .button:hover{
+    color: var(--secondary-color) !important; 
+}
+
+.sticky .button:hover i{
+    color: var(--secondary-color) !important;
+    transition: 0.5s;
+}
 
 .stickyhero {
     margin-top: 80px;
@@ -129,7 +141,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 20px 60px;
+    padding: 20px 40px;
     box-shadow: 0 0 2rem 0 rgba(243, 200, 130, 0.1);
 }
 
@@ -141,6 +153,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .nav-right a {
@@ -148,7 +161,7 @@ nav {
 }
 
 .nav-right>ul>li>a {
-    padding: 0 20PX;
+    /* padding: 0 20PX; */
     color: var(--forground-color);
     font-size: 20px;
     font-family: 'Heebo', sans-serif;
@@ -159,6 +172,18 @@ nav {
     transition: 0.5s;
 }
 
+.button{
+    padding: 2px 15px;
+    background: var(--secondary-color);
+    border-radius: 50px
+}
+.button:hover{
+    color: var(--bgcolor) !important;
+}
+.button:hover i{
+    color: var(--bgcolor) !important;
+    transition: 0.5s;
+}
 .mobile-nav {
     display: none;
     background: transparent;
