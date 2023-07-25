@@ -14,7 +14,7 @@ function preLoader() {
             currentValue = 100;
         }
 
-        Counter.textContent = currentValue;
+        Counter.textContent = currentValue+"%";
 
         let delay = Math.floor(Math.random() * 200) + 50;
         setTimeout(updateCounter, delay);
